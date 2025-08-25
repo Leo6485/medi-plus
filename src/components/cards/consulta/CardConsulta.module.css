@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.bgCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0f0;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    height: 180px;
+    width: 200px;
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #d0d0d0;
+    border-radius: 5px 5px 0 0;
+}
+.title {
+    margin: 10px;
+    font-size: 1.0rem;
+    color: #050505;
+}
+
+.info {
+    font-size: 0.5rem;
+    color: #050505;
+}
+.time {
+    font-size: 0.5rem;
+    color: #101010;
+}
+
+.showMore {
+    background-color: aqua;
+    color: #1e1e1f;
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+}
