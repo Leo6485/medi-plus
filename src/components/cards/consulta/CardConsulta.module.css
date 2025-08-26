@@ -24,7 +24,7 @@
 .title {
     margin: 10px;
     font-size: 1.0rem;
-    color: #050505;
+    color: var(--color1);
 }
 
 .info {
