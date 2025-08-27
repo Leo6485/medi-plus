@@ -1,0 +1,28 @@
+.dockContainer {
+    position: fixed;
+    bottom: 0;
+    left: 50dvw;
+    transform: translate(-50%, 0);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 5dvw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    width: 100dvw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.item, .active{
+    color: var(--gray1);
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.active {
+    color: var(--blue1);
+}

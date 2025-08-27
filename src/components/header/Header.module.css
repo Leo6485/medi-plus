@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--blue1);
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.headerName {
+    color: #fafafa;
+    font-size: 1rem;
+    margin: 0;
+}
