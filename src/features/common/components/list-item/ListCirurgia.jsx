@@ -3,7 +3,7 @@ import { FaSyringe } from "react-icons/fa6"
 
 function ListCirurgia({title, info, time, onClick}) {
     return (
-        <div className={styles.bg}>
+        <div className={styles.listaBG}>
             <div className={styles.imageDiv}>
                 <FaSyringe size="50%" color="var(--blue0)"></FaSyringe>
             </div>

@@ -1,5 +1,5 @@
-import CardBasic from '../../components/cards/basic/CardBasic';
-import ListConsulta from '../../components/list-item/consulta/ListConsulta';
+import CardBasic from '../../common/components/cards/CardBasic';
+import ListConsulta from '../../common/components/list-item/ListConsulta';
 
 
 function ClientHome() {

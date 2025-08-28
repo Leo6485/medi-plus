@@ -1,5 +1,5 @@
-import CardBasic from '../../components/cards/basic/CardBasic';
-import ListCirurgia from '../../components/list-item/cirurgia/ListCirurgia';
+import CardBasic from '../../common/components/cards/CardBasic';
+import ListCirurgia from '../../common/components/list-item/ListCirurgia';
 
 
 function ClientCirurgias() {

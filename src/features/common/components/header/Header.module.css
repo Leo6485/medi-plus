@@ -1,10 +1,11 @@
 .header {
-    background-color: var(--blue1);
     width: 100%;
     display: flex;
     justify-content: left;
+    align-items: center;
     padding: 10px 20px;
     margin-bottom: 10px;
+    height: 100px;
 }
 
 .headerName {

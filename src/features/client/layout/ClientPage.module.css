@@ -1,0 +1,23 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.bg {
+  overflow: scroll;
+  background-color: #f0faff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  padding-bottom: 100px;
+  border-radius: 25px;
+}

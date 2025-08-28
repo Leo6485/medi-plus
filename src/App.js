@@ -1,17 +1,16 @@
 import './App.css';
-import Login from "./pages/login/Login"
-import ClientPage from "./pages/cliente/ClientPage"
-import ClientHome from './pages/cliente/ClientHome';
-import ClientAgenda from './pages/cliente/ClientAgenda';
-import ClientCirurgias from './pages/cliente/ClientCirurgias';
 import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import AppRoutes from "./core/AppRoutes"
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='bg'>
-
+      <div className='root-container'>
+      <AppRoutes />
+      </div>
+        { /*
         <Routes>
           <Route path='/cliente' element={<ClientPage/>}>
             <Route path="home" element={<ClientHome/>}></Route>
@@ -21,8 +20,7 @@ function App() {
           </Route>
 
         </Routes>
-
-      </div>
+        */ }
     </BrowserRouter>
   )
 }

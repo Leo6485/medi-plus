@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.bg {
+.listaBG {
     display: flex;
     align-items: center;
     flex-direction: row;
