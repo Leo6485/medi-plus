@@ -1,11 +1,12 @@
 import CardBasic from '../../common/components/cards/CardBasic';
 import ListConsulta from '../../common/components/list-item/ListConsulta';
-
+import Input from '../../common/components/form/Input';
+import { useState } from "react"
 
 function ClientHome() {
+    const [v, setVv] = useState();
     return (
         <>
-        
             <CardBasic title="Últimas Consultas">
                 <ListConsulta title="Cardiologia - Dr. Pedro Silva" info="Rua sem volta, N: 2000"></ListConsulta>
                 <ListConsulta title="Ortopedista - Dr. Lucas Silva" info="Rua sem volta, N: 2001"></ListConsulta>

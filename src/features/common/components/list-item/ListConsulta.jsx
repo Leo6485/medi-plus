@@ -1,4 +1,4 @@
-import styles from "./ListConsulta.module.css"
+import styles from "./List.module.css"
 import { FaStethoscope } from "react-icons/fa6"
 
 function ListConsulta({title, info, time, onClick}) {
@@ -9,7 +9,7 @@ function ListConsulta({title, info, time, onClick}) {
             </div>
             <div>
                 <p className={styles.title}>{title}</p>
-                <p>{info}</p>
+                <p className={styles.info}>{info}</p>
             </div>
         </div>
     )

@@ -23,11 +23,11 @@
 }
 .title {
     margin: 5px 0;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     color: #050505;
 }
 
 .info {
-    font-size: 0.5rem;
-    color: #101010;
+    font-size: 0.8rem;
+    color: #404040;
 }

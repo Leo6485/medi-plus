@@ -22,7 +22,6 @@
     cursor: pointer;
 }
 
-
 .active {
     color: var(--blue1);
 }

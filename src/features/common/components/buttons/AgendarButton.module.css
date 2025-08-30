@@ -1,12 +1,12 @@
-button {
+.agendarButton {
     position: fixed;
     bottom: 75px;
     right: 20px;
     background: var(--blue0);
     color: #fafafa;
-    border-radius: 25px;
+    border-radius: 12px;
     border: none;
-    width: 150px;
+    width: 100px;
     height: 50px;
     margin: auto;
     z-index: 100px;
@@ -15,4 +15,16 @@ button {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: 0.5s ease-in-out all;
+}
+
+.agendarButton:hover {
+    width: 150px;
+    padding: 0 25px 0 0;
+    border-radius: 25px 10px 10px 25px;
+    transition: 0.5s ease-in-out all;
+}
+
+span {
+    pointer-events: none;
 }

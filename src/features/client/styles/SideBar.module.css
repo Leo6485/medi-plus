@@ -52,6 +52,10 @@ ul {
     gap: 5px;
 }
 
+.item:hover {
+    background-color: #fafafa50;
+}
+
 .active {
     background-color: #fafafadd;
     color: var(--blue1);

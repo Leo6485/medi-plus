@@ -1,0 +1,36 @@
+.input {
+    padding: 10px;
+    background-color: #fafafa;
+    border: 2px solid var(--blue0);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.input:focus::placeholder {
+    color: transparent;
+}
+.inputLabel, .inputLabelActive {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    margin: 0;
+    width: fit-content;
+    margin: 0 0 0 10px;
+    transform: translate(0, 12px);
+    transition: 0.1s ease-in-out all;
+    pointer-events: none;
+    background-color: #00000000;
+    color: #00000000;
+}
+
+.inputLabelActive {
+    position: absolute;
+    background-color: #fafafa;
+    color: blue;
+    transform: translate(-5px, -10px) scale(0.8);
+    transition: 0.1s ease-in-out all;
+}

@@ -10,6 +10,7 @@
 
 .bg {
   overflow: scroll;
+  overflow-x: hidden;
   background-color: #f0faff;
   display: flex;
   flex-direction: column;
@@ -19,5 +20,5 @@
   width: 100%;
   padding: 25px;
   padding-bottom: 100px;
-  border-radius: 25px;
+  border-radius: 25px 0 0 0;
 }
