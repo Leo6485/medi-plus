@@ -1,7 +1,12 @@
+.inputDiv {
+    display: flex;
+    width: 100%;
+}
+
 .input {
     padding: 10px;
     background-color: #fafafa;
-    border: 2px solid var(--blue0);
+    border: 1px solid #aaaaaa;
     outline: none;
     border-radius: 10px;
     width: 100%;

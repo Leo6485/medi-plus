@@ -4,7 +4,7 @@ import styles from "./Input.module.css"
 function Input({ setValue, placeHolder}) {
     const [labelClass, setLabelClass] = useState(styles.inputLabel)
     return (
-        <div>
+        <div className={styles.inputDiv}>
             <label htmlFor="i" className={labelClass}>{placeHolder}</label>
             <input id="i" className={styles.input} onFocus={() => setLabelClass(styles.inputLabelActive)} onBlur={ () => setLabelClass(styles.inputLabel)} placeholder={placeHolder}></input>
             {/* <input className={styles.input} onChange={(e) => value = setValue(e.target.value)}></input> */}

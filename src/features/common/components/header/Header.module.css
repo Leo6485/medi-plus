@@ -13,3 +13,21 @@
     font-size: 1rem;
     margin: 0;
 }
+
+.rightContainer {
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.profilePicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}

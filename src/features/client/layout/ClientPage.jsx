@@ -14,12 +14,12 @@ function ClientPage() {
     return (
         <>
             {width >= 500 && <SideBar></SideBar>}
+            {width < 500 && <ClientDock></ClientDock>}
             <div className={styles.contentContainer}>
-                <Header name="Leonardo"></Header>
+                <Header name="Fulano"></Header>
                 <div className={styles.bg}>
                     <Outlet></Outlet>
                 </div>
-                {width < 500 && <ClientDock></ClientDock>}
             </div>
         </>
     )
