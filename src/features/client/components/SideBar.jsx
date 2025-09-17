@@ -13,36 +13,24 @@ function SideBar() {
         setActive(route)
     }
 
+    function SideBarItem({ label, icon: Icon }) {
+        return (
+            <li className={active === label ? styles.active : styles.item} onClick={() => setRoute(label)}>
+                {<Icon size="20px"></Icon>}
+                {label.charAt(0).toUpperCase() + label.slice(1)}
+            </li>
+        )
+    }
     return (
         <div className={styles.sideBarBG}>
             <div className={styles.sideHeader}>
                 <FaHospital size="50px"></FaHospital>Hospital SJ
             </div>
             <ul>
-                <li
-                    className={active === "home" ? styles.active : styles.item}
-                    onClick={() => setRoute("home")}
-                >
-                    <FaHouse size="20px"/>Home
-                </li>
-                <li
-                    className={active === "agenda" ? styles.active : styles.item}
-                    onClick={() => setRoute("agenda")}
-                >
-                    <FaCalendarCheck size="20px"/>Agenda
-                </li>
-                <li
-                    className={active === "cirurgias" ? styles.active : styles.item}
-                    onClick={() => setRoute("cirurgias")}
-                >
-                    <FaSyringe size="20px"/>Cirurgias
-                </li>
-                <li
-                    className={active === "perfil" ? styles.active : styles.item}
-                    onClick={() => setRoute("perfil")}
-                >
-                    <FaUser size="20px"/>Perfil
-                </li>
+                <SideBarItem label="home" icon={FaHouse}></SideBarItem>
+                <SideBarItem label="agenda" icon={FaCalendarCheck}></SideBarItem>
+                <SideBarItem label="cirurgias" icon={FaSyringe}></SideBarItem>
+                <SideBarItem label="perfil" icon={FaUser}></SideBarItem>
             </ul>
         </div>
     )

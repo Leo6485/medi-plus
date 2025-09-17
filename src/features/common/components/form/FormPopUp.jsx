@@ -1,4 +1,5 @@
 import styles from "./FormPopUp.module.css"
+import PopUp from "../popUp/PopUp";
 
 function FormPopUp( { visible, setVisible, confirmAction, children} ) {
     if (!visible) return null;
@@ -16,7 +17,7 @@ function FormPopUp( { visible, setVisible, confirmAction, children} ) {
             </div>
         </div>
 
-    )
+    ) 
 }
 
 export default FormPopUp

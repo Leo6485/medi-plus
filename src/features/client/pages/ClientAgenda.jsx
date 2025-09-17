@@ -2,7 +2,7 @@ import CardBasic from '../../common/components/cards/CardBasic';
 import ListConsulta from '../../common/components/list-item/ListConsulta';
 import AgendarButton from '../../common/components/buttons/AgendarButton';
 import { useState } from "react"
-import FormPopUp from "../../common/layouts/form/FormPopUp"
+import FormPopUp from "../../common/components/form/FormPopUp"
 
 import Input from "../../common/components/form/Input"
 

@@ -12,33 +12,22 @@ function ClientDock() {
         setActive(route)
     }
 
+    
+    function DockItem({ label, icon: Icon }) {
+        return (
+            <li className={active === label ? styles.active : styles.item} onClick={() => setRoute(label)}>
+                {<Icon size="20px"></Icon>}
+            </li>
+        )
+    }
+
     return (
         <div>
             <ul className={styles.dockContainer}>
-                <li
-                    className={active === "home" ? styles.active : styles.item}
-                    onClick={() => setRoute("home")}
-                >
-                    <FaHouse size="20px"/>
-                </li>
-                <li
-                    className={active === "agenda" ? styles.active : styles.item}
-                    onClick={() => setRoute("agenda")}
-                >
-                    <FaCalendarCheck size="20px"/>
-                </li>
-                <li
-                    className={active === "cirurgias" ? styles.active : styles.item}
-                    onClick={() => setRoute("cirurgias")}
-                >
-                    <FaSyringe size="20px"/>
-                </li>
-                <li
-                    className={active === "perfil" ? styles.active : styles.item}
-                    onClick={() => setRoute("perfil")}
-                >
-                    <FaUser size="20px"/>
-                </li>
+                <DockItem label="home" icon={FaHouse}></DockItem>
+                <DockItem label="agenda" icon={FaCalendarCheck}></DockItem>
+                <DockItem label="cirurgias" icon={FaSyringe}></DockItem>
+                <DockItem label="perfil" icon={FaUser}></DockItem>
             </ul>
         </div>
     )
