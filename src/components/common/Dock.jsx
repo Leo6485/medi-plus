@@ -1,9 +1,8 @@
-import styles from "../styles/ClientDock.module.css"
-import { FaHouse, FaCalendarCheck, FaSyringe, FaUser } from "react-icons/fa6"
+import styles from "./Dock.module.css"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
-function ClientDock() {
+function Dock({ data }) {
     const [active, setActive] = useState("home")
     const navigate = useNavigate()
 
@@ -16,7 +15,8 @@ function ClientDock() {
     function DockItem({ label, icon: Icon }) {
         return (
             <li className={active === label ? styles.active : styles.item} onClick={() => setRoute(label)}>
-                {<Icon size="20px"></Icon>}
+                {<Icon size="25px"></Icon>}
+                <p className={styles.label}>{label}</p>
             </li>
         )
     }
@@ -24,13 +24,10 @@ function ClientDock() {
     return (
         <div>
             <ul className={styles.dockContainer}>
-                <DockItem label="home" icon={FaHouse}></DockItem>
-                <DockItem label="agenda" icon={FaCalendarCheck}></DockItem>
-                <DockItem label="cirurgias" icon={FaSyringe}></DockItem>
-                <DockItem label="perfil" icon={FaUser}></DockItem>
+                {data.map((item, i) => (<DockItem key={i} label={item.label} icon={item.Icon}/>))}
             </ul>
         </div>
     )
 }
 
-export default ClientDock
+export default Dock

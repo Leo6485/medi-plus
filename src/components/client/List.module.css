@@ -1,0 +1,44 @@
+.container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 15px;
+    border-radius: 12px;
+    background-color: #fafafa;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 10px;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 0.55rem;
+}
+
+.title {
+    margin: 0 0 0 -5px;
+    padding: 0;
+    color: #101020;
+    font-size: 1.2rem;
+}
+
+.listaBG {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: 0;
+    border-bottom: 1px solid #aaaabb;
+    padding: 20px 0;
+}
+
+.listaBG:last-child {
+    border: none;
+}
+
+.name {
+    font-size: 1.0rem;
+    color: #101020;
+    margin-bottom: 5px;
+}
+
+.info {
+    font-size: 0.8rem;
+    color: #404040;
+}

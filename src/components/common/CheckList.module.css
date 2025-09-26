@@ -1,0 +1,45 @@
+.container {
+    max-width: 90%;
+    width: 500px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 25px 20px;
+    box-shadow: #eeeef0 5px 5px 20px;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #101020;
+}
+
+.ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #dddde0;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.listItem:last-child {
+    border: none;
+}
+
+.checked, .pending {
+    font-size: 1.1rem;
+    color: #50505f;
+}
+.checked {
+    text-decoration: line-through;
+    color: #808090;
+}

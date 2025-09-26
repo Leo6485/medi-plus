@@ -1,7 +1,7 @@
 :root {
-    --gray1: #505050;
+    --gray1: #6e7c85;
     --blue0: #0550dd;
-    --blue1: #0288d1;
+    --blue1: #2D4A9D;
     --blue2: #29b6f6;
     --blue3: #4fc3f7;
     --blue4: #81d4fa;
@@ -16,7 +16,7 @@
 
 .root-container {
   overflow: hidden;
-  background: linear-gradient(20deg, var(--blue1), var(--blue2));
+  background: #F7F8FA;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

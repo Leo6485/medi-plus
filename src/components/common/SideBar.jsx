@@ -1,10 +1,9 @@
-import styles from "../styles/SideBar.module.css"
-import { FaHouse, FaCalendarCheck, FaSyringe, FaUser } from "react-icons/fa6"
+import styles from "./SideBar.module.css"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { FaHospital } from "react-icons/fa6"
 
-function SideBar() {    
+function SideBar({ data }) {    
     const [active, setActive] = useState("home")
     const navigate = useNavigate()
 
@@ -27,10 +26,7 @@ function SideBar() {
                 <FaHospital size="50px"></FaHospital>Hospital SJ
             </div>
             <ul>
-                <SideBarItem label="home" icon={FaHouse}></SideBarItem>
-                <SideBarItem label="agenda" icon={FaCalendarCheck}></SideBarItem>
-                <SideBarItem label="cirurgias" icon={FaSyringe}></SideBarItem>
-                <SideBarItem label="perfil" icon={FaUser}></SideBarItem>
+                {data.map((item, i) => (<SideBarItem key={i} label={item.label} icon={item.Icon}/>))}
             </ul>
         </div>
     )
