@@ -32,7 +32,7 @@ const markdown = `
         <PopUp visible={vInfo} setVisible={setVInfo}></PopUp>
         <CheckList list={consulta_lista} title="Consultas no mês"></CheckList>
         <AgendarButton onclick={() => setVAgendar(true)}></AgendarButton>
-        <FullPage visible={vAgendar} setVisible={setVAgendar} title="Agenda"></FullPage>
+        <FullPage visible={vAgendar} setVisible={setVAgendar} title="Agendar Consulta"></FullPage>
         <News markdown={markdown}></News>
         </div>
     )
