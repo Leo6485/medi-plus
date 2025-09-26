@@ -1,0 +1,12 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50%;
+    background-color: #27AE9C;
+    color: #fafafa;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1rem;
+}

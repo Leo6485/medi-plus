@@ -17,7 +17,7 @@ function ClientPage() {
 
     const dock_data = [
         { label: "home", Icon: FaHouse },
-        { label: "agenda", Icon: FaCalendarCheck },
+        { label: "consultas", Icon: FaCalendarCheck },
         { label: "cirurgias", Icon: FaSyringe },
         { label: "perfil", Icon: FaUser }
     ]

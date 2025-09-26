@@ -9,7 +9,7 @@ function AppRoutes() {
         <Routes>
             <Route path="/cliente" element={<ClientPage/>}>
                 <Route path="home" element={<ClientHome/>}/>
-                <Route path="agenda" element={<ClientAgenda/>}/>
+                <Route path="consultas" element={<ClientAgenda/>}/>
                 <Route path="cirurgias" element={<ClientCirurgias/>}/>
                 <Route path="perfil" element={<ClientHome/>}/>
             </Route>
