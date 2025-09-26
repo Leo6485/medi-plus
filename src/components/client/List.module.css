@@ -18,27 +18,27 @@
     font-size: 1.2rem;
 }
 
-.listaBG {
+.listItem {
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     margin: 0;
-    border-bottom: 1px solid #aaaabb;
+    border-bottom: 1px solid #dddde0;
     padding: 20px 0;
 }
 
-.listaBG:last-child {
+.listItem:last-child {
     border: none;
 }
 
 .name {
     font-size: 1.0rem;
-    color: #101020;
+    color: #404050;
     margin-bottom: 5px;
 }
 
 .info {
     font-size: 0.8rem;
-    color: #404040;
+    color: #50505f;
 }

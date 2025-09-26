@@ -8,7 +8,7 @@
     top: 0;
     position: sticky;
     background-color: #F7F8FAdd;
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px);
 }
 
 .headerName {

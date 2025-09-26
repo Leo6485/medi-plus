@@ -2,9 +2,12 @@ import styles from "./List.module.css"
 
 
 function ListConsulta({ title, data}) {
+    if (!data || !data.length) {
+        return null;
+    }
     function ListItem({name, info}) {
     return (
-        <div className={styles.listaBG}>
+        <div className={styles.listItem}>
             <div>
                 <p className={styles.name}>{name}</p>
                 <p className={styles.info}>{info}</p>

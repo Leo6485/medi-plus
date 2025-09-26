@@ -3,9 +3,13 @@ import CheckList from '../../../components/common/CheckList';
 import styles from "./Cliente.module.css"
 import AgendarButton from '../../../components/client/AgendarButton';
 import News from '../../../components/client/News';
-
+import PopUp from '../../../components/common/popUp/PopUp';
+import { useState } from 'react';
+import FullPage from '../../../components/common/fullPage/FullPage';
 
 function ClientHome() {
+    const [vInfo, setVInfo] = useState(false)
+    const [vAgendar, setVAgendar] = useState(false)
     const consulta_lista = [
       { text: "Cardiologista", checked: true },
       { text: "Nutricionista", checked: true },
@@ -24,9 +28,11 @@ const markdown = `
 
     return (
         <div className={styles.container}>
-        <NextConsulta title="Cardiologista" text="Cardiologia - 28/09, 14:30. Lembre-se do jejum de 8 horas."></NextConsulta>
+        <NextConsulta title="Cardiologista" text="Cardiologia - 28/09, 14:30. Lembre-se do jejum de 8 horas." onClick={() => setVInfo(true)}></NextConsulta>
+        <PopUp visible={vInfo} setVisible={setVInfo}></PopUp>
         <CheckList list={consulta_lista} title="Consultas no mês"></CheckList>
-        <AgendarButton></AgendarButton>
+        <AgendarButton onclick={() => setVAgendar(true)}></AgendarButton>
+        <FullPage visible={vAgendar} setVisible={setVAgendar} title="Agenda"></FullPage>
         <News markdown={markdown}></News>
         </div>
     )

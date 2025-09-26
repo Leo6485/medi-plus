@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #fafafa;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.topBar {
+    width: 100dvw;
+    top: 0;
+    display: flex;
+    border-bottom: 1px solid #dddde0;
+    padding: 20px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.title {
+    margin: auto;
+    color: #50505f;
+    font-size: 1.2rem;
+}
