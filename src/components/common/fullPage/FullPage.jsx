@@ -12,6 +12,7 @@ export default function FullPage({ visible, setVisible, title, children }) {
                 <FaArrowLeft size="20px" color="#50505f" className={styles.icon} onClick={() => setVisible(false)}></FaArrowLeft>
                 <p className={styles.title}>{title}</p>
             </div>
+            {children}
         </div>
     )
 }

@@ -4,15 +4,15 @@
 }
 
 .input {
+    color: #50505f;
     padding: 10px;
     background-color: #fafafa;
-    border: 1px solid #aaaaaa;
+    border: none;
+    border-bottom: 1px solid var(--gray-line);
     outline: none;
-    border-radius: 10px;
     width: 100%;
     font-size: 1rem;
 }
-
 .input:focus::placeholder {
     color: transparent;
 }
@@ -34,8 +34,7 @@
 
 .inputLabelActive {
     position: absolute;
-    background-color: #fafafa;
-    color: blue;
+    color: var(--blue1);
     transform: translate(-5px, -10px) scale(0.8);
     transition: 0.1s ease-in-out all;
 }
