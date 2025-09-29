@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--gray1);
+    color: #202040;
     text-decoration: none;
     list-style: none;
     cursor: pointer;
@@ -34,5 +34,4 @@
 }
 .active {
     color: var(--blue1);
-    font-weight: 700;
 }

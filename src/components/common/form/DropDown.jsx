@@ -22,7 +22,7 @@ export default function Dropdown({ options, defaultOption, onSelect, title }) {
             <div className={styles.container} onClick={() => setOpened(false)}>
                 <div className={styles.optionsContainer}>
                     <h1>{title}</h1>
-                    {options.map((item, i) => <optionItem onClick={() => setSelection(i)} className={selection == i ? styles.optionItemSelected : styles.optionItem} key={i} selection={selection} setSelection={setSelection}>{item}</optionItem>)}
+                    {options.map((item, i) => <optionItem onClick={() => setSelection(i)} className={selection === i ? styles.optionItemSelected : styles.optionItem} key={i} selection={selection} setSelection={setSelection}>{item}</optionItem>)}
                 </div>
             </div>
         </>
