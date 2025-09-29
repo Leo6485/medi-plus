@@ -6,7 +6,7 @@ import News from '../../../components/client/News';
 import PopUp from '../../../components/common/popUp/PopUp';
 import { useState } from 'react';
 import AgendarConsulta from './AgendarConsulta';
-
+import Markdown from '../../../components/common/markdown/Markdown';
 
 function ClientHome() {
     const [vInfo, setVInfo] = useState(false)
@@ -19,19 +19,27 @@ function ClientHome() {
       { text: "Cardiologista", checked: false }
     ];
 
-const markdown = `
+    const markdown = `
 # Notícias
 - **Campanha de vacinação contra gripe:** 01/10 a 15/10. Traga seu cartão de vacinação.
 - **Suspensão temporária de consultas de ortopedia:** 29/09, devido à manutenção de equipamentos.
 `;
 
-
+    const markdown_instrucoes = `
+# Instruções
+- **Instrução 1**
+- **Instrução 2**
+`
 
 
     return (
         <div className={styles.container}>
         <NextConsulta title="Cardiologista" text="Cardiologia - 28/09, 14:30. Lembre-se do jejum de 8 horas." onClick={() => setVInfo(true)}></NextConsulta>
-        <PopUp visible={vInfo} setVisible={setVInfo}></PopUp>
+
+        <PopUp visible={vInfo} setVisible={setVInfo}>
+            <Markdown markdown={markdown_instrucoes}></Markdown>
+        </PopUp>
+
         <CheckList list={consulta_lista} title="Consultas no mês"></CheckList>
 
         <AgendarButton onclick={() => setVAgendar(true)}></AgendarButton>

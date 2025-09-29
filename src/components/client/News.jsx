@@ -1,12 +1,11 @@
-import ReactMarkdown from "react-markdown"
 import styles from "./News.module.css"
-import remarkGfm from "remark-gfm"
+import Markdown from "../common/markdown/Markdown"
 
 export default function News({ markdown }) {
     return (
         <div className={styles.container}>
             <div className={styles.markdownBody}>
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+                <Markdown markdown={markdown}></Markdown>
             </div>
         </div>
     )
